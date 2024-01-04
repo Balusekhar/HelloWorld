@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bookmarks</title>
+    <title>HTML Forms</title>
 </head>
 <body>
 
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Balu</td>
-            <td>23</td>
-        </tr>
-    </table>
+    <h1>Learn About Forms</h1>
+    <hr>
+    <form action="post">
 
-    <ul type="square">
-        <li>Balu</li>
-        <li>Chandra</li>
-        <li>Sekhar</li>
-        <li>Tirupati</li>
-    </ul>
+        <label for="username">Enter Your Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter Your Username">
 
+        <br>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">Female</label>
+
+        <br>
+
+        <input type="checkbox" name="Subscribe" id="Subscribe">
+        <label for="Subscribe">Subscribe For NewsLetter</label>
+    </form>
+
+    <select name="Subscribe Options">
+        <option value="submit">Submit</option>
+        <option value="save">Save</option>
+        <option value="discard">Discard</option>
+    </select>
+    
 </body>
 </html>
